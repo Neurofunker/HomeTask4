@@ -15,14 +15,15 @@ int[] Generatearray(int size, int min, int max)
 
 void PrintArray(int[] arr)
 {
-    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
         else Console.Write($"{arr[i]}");
     }
-    Console.Write("]");
 }
 
 int[] array = Generatearray(8, 10, 100);
 PrintArray(array);
+Console.Write(" -> [");
+PrintArray(array);
+Console.Write("]");
